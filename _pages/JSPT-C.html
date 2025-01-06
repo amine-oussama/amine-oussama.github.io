@@ -17,7 +17,7 @@ author_profile: true
             </u>
         </span>
     </p>
-    <p>
+    <p style="margin-left: 10px; margin-top: 5px;">
         <b>Amine Oussama, Jean-Philippe Gayon, Philippe Lacomme.</b>
         <i>Job-Shop Scheduling with Cooperative Transportation Resources.</i>
         ROADEF 2025-26ème congrès de la société Française de Recherche Opérationnelle et d’Aide à la Décision, 
@@ -32,19 +32,34 @@ author_profile: true
         </span>
         We used the instances of (Ümit Bilge and Gündüz Ulusoy, 1995) for the classical JSPT to create new instances for the JSPT-C.
     </p>
-    <h2>Dowload Instances and Results:</h2>
-    
-    <p>
-        <center>
-            <a href="InstancesGetal.zip">
-                <img alt="" width="50" height="50" src="../images/downloadFolder.png"/>
+    <h2><u style="color: rebeccapurple">Dowload Instances and Results:</u></h2>
+
+        <h3><ul>JSPT instances (Bilge and Ulusoy, 1995):</ul></h3>
+        <p>
+            <center>
+            <a href="../JSPT.zip" download="JSPT.zip">
+        
+                    <img src="../images/downloadFolder.png" alt="" style="width: 50px; height: 50px;"/>
             </a>
         </center>
-    </p> 
-    <p>
-        Each instance, denoted as <code>EX&lt;Jobset&gt;&lt;Layout&gt;C&lt;NR&gt;</code>, represents the original instance <code>EX&lt;Jobset&gt;&lt;Layout&gt;</code> from (Bilge and Ulusoy, 1995) extended with cooperation constraints, where <code>&lt;NR&gt;</code> indicates the number of robots (Possible values are: 2, 3, 5, 7, 10). 
-        For example, the instance <code>EX11C3</code> represents an instance with Jobset <code>1</code> and Layout <code>1</code> with 3 robots and cooperation constraints.
-    </p>
+        </p>
+
+        <h3><ul>JSPT-C instances:</ul></h3>
+
+            <p>
+                <center>
+                <a href="../JSPT-C.zip" download="JSPT-C.zip">
+            
+                        <img src="../images/downloadFolder.png" alt="" style="width: 50px; height: 50px;"/>
+                </a>
+            </center>
+            </p>
+
+        <div>These instances are adapted from (Bilge and Ulusoy, 1995) instances for the classical JSPT. Each JSPT-C instance, denoted as <code>EX&lt;Jobset&gt;&lt;Layout&gt;C&lt;NR&gt;</code>, represents the original instance <code>EX&lt;Jobset&gt;&lt;Layout&gt;</code> from (Bilge and Ulusoy, 1995) extended with cooperation constraints, where <code>&lt;NR&gt;</code> indicates the number of robots (Possible values are: 2, 3, 5, 7, 10). 
+            For example, the instance <code>EX11C3</code> represents an instance with Jobset <code>1</code> and Layout <code>1</code> with 3 robots and cooperation constraints.
+        </div>
+
+        
     <p>
         Each instance folder contains the:
     </p>
@@ -53,10 +68,10 @@ author_profile: true
             <code>EX&lt;Jobset&gt;&lt;Layout&gt;</code> extended with cooperation requirements, where <code>&lt;NR&gt;</code> indicates 
             the number of robots (Possible values are: 2, 3, 5, 7, 10). For example, the instance <code>EX11C3</code> represents an 
             instance with Jobset <code>1</code> and Layout <code>1</code> with 3 robots and cooperation requirements.</li>
-        <li><span style="color: black;"><b>MILP (CPLEX) results:</b></span><code>EX&lt;Jobset&gt;&lt;Layout&gt;C&lt;NR&gt;_MILP.txt</code>.</li>
-        <li><span style="color: black;"><b>GRASP-ELS results for multiple runs:</b></span><code>EX&lt;Jobset&gt;&lt;Layout&gt;C&lt;NR&gt;_GRASP_ELS_RUN_x.txt</code>, where <code>x</code> is the run number.</li>
+        <li><span style="color: black;"><b>MILP (CPLEX) results:</b></span><code>EX&lt;Jobset&gt;&lt;Layout&gt;C&lt;NR&gt;_Cplex.txt</code>.</li>
+        <li><span style="color: black;"><b>GRASP-ELS results for multiple runs:</b></span><code>EX&lt;Jobset&gt;&lt;Layout&gt;C&lt;NR&gt;_GraspEls_Run_x.txt</code>, where <code>x</code> is the run number.</li>
     </ul>
-    <h2>Description of instance files:</h2>
+    <h2><u style="color: rebeccapurple">Instance files format:</u></h2>
     <p> Refer to the picture below for an example of the instance file <code>EX11C3.txt</code></p>
     <!--
     <p>
@@ -71,10 +86,10 @@ author_profile: true
         Refer to the picture below for an example of instance file <code>EX&lt;1&gt;&lt;1&gt;C&lt;3&gt;.txt</code>
     </p>-->
     <img src="../images/Description_Instance_JSPTC_EX11C3.png" alt="Sample Image">
-    <h2>Description of MILP (CPLEX) solution files:</h2>
+    <h2><u style="color: rebeccapurple">MILP (CPLEX) solution file format:</u></h2>
     <p> Refer to the picture below for an example of the MILP solution for the instance <code>EX11C3</code></p>
     <img src="../images/Description_Solution_MILP__JSPTC_EX11C3.png" alt="Sample Image" width="700" height="1400">   
-    <h2>Description of GRASPxELS metaheuristic solution files:</h2>
+    <h2><u style="color: rebeccapurple">GRASPxELS metaheuristic solution file format:</u></h2>
     <p> Refer to the picture below for an example of the result of the first execution of GRASPxELS for the instance <code>EX11C3</code></p>
     <img src="../images/Description_Solution_GraspEls_Run_1.png" alt="Sample Image" width="700" height="1400">
 </div>
